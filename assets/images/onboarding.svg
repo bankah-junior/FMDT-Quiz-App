@@ -1,0 +1,71 @@
+<svg width="358" height="358" viewBox="0 0 358 358" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9_168)">
+<rect width="358" height="358" fill="white"/>
+<g clip-path="url(#clip1_9_168)">
+<rect width="358.8" height="119.6" transform="translate(-0.400024 -0.629997)" fill="white"/>
+<path d="M-0.400024 59.17C-0.400024 26.1433 26.3733 -0.629997 59.4 -0.629997C92.4266 -0.629997 119.2 26.1434 119.2 59.17V118.97H-0.400024V59.17Z" fill="#DCC600"/>
+<rect width="119.6" height="119.6" transform="translate(119.2 -0.629993)" fill="#6EDBA6"/>
+<circle cx="179" cy="59.17" r="36.8" fill="#01742F"/>
+<g clip-path="url(#clip2_9_168)">
+<rect width="119.6" height="119.6" transform="translate(238.8 -0.629993)" fill="#FE950B"/>
+<rect x="238.8" y="45.37" width="119.6" height="27.6" fill="black"/>
+</g>
+</g>
+<g clip-path="url(#clip3_9_168)">
+<rect width="359.26" height="120.06" transform="translate(-0.630005 118.97)" fill="white"/>
+<g clip-path="url(#clip4_9_168)">
+<rect width="119.6" height="119.6" transform="translate(-0.630005 119.2)" fill="#01742F"/>
+<circle cx="59.17" cy="179" r="47.38" stroke="white" stroke-width="25.76"/>
+</g>
+<g clip-path="url(#clip5_9_168)">
+<rect width="119.6" height="119.6" transform="translate(118.97 119.2)" fill="white"/>
+<ellipse cx="178.77" cy="179" rx="60.26" ry="59.8" fill="#DCC600"/>
+</g>
+<rect width="119.6" height="119.6" transform="translate(238.57 118.97)" fill="#01742F"/>
+<path d="M238.57 118.97H358.63V239.03L238.57 118.97Z" fill="#6EDBA6"/>
+</g>
+<g clip-path="url(#clip6_9_168)">
+<rect width="358.8" height="119.6" transform="translate(-0.400024 239.03)" fill="white"/>
+<path d="M-0.400024 239.03H59.4C92.4266 239.03 119.2 265.803 119.2 298.83V358.63H59.3999C26.3733 358.63 -0.400024 331.857 -0.400024 298.83V239.03Z" fill="#6EDBA6"/>
+<g clip-path="url(#clip7_9_168)">
+<rect width="119.6" height="119.6" transform="translate(119.2 239.03)" fill="#FE950B"/>
+<g clip-path="url(#clip8_9_168)">
+<circle cx="160.6" cy="268.93" r="29.9" fill="black"/>
+<circle cx="160.6" cy="328.73" r="29.9" fill="black"/>
+</g>
+<rect x="199.7" y="358.63" width="119.6" height="27.6" transform="rotate(-90 199.7 358.63)" fill="black"/>
+</g>
+<path d="M346.9 250.53V298.83C346.9 325.505 325.275 347.13 298.6 347.13C271.925 347.13 250.3 325.505 250.3 298.83V250.53H346.9Z" fill="white"/>
+<path d="M346.9 250.53V298.83C346.9 325.505 325.275 347.13 298.6 347.13C271.925 347.13 250.3 325.505 250.3 298.83V250.53H346.9Z" stroke="#FE950B" stroke-width="23"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_9_168">
+<rect width="358" height="358" fill="white"/>
+</clipPath>
+<clipPath id="clip1_9_168">
+<rect width="358.8" height="119.6" fill="white" transform="translate(-0.400024 -0.629997)"/>
+</clipPath>
+<clipPath id="clip2_9_168">
+<rect width="119.6" height="119.6" fill="white" transform="translate(238.8 -0.629993)"/>
+</clipPath>
+<clipPath id="clip3_9_168">
+<rect width="359.26" height="120.06" fill="white" transform="translate(-0.630005 118.97)"/>
+</clipPath>
+<clipPath id="clip4_9_168">
+<rect width="119.6" height="119.6" fill="white" transform="translate(-0.630005 119.2)"/>
+</clipPath>
+<clipPath id="clip5_9_168">
+<rect width="119.6" height="119.6" fill="white" transform="translate(118.97 119.2)"/>
+</clipPath>
+<clipPath id="clip6_9_168">
+<rect width="358.8" height="119.6" fill="white" transform="translate(-0.400024 239.03)"/>
+</clipPath>
+<clipPath id="clip7_9_168">
+<rect width="119.6" height="119.6" fill="white" transform="translate(119.2 239.03)"/>
+</clipPath>
+<clipPath id="clip8_9_168">
+<rect width="59.8" height="119.6" fill="white" transform="translate(130.7 239.03)"/>
+</clipPath>
+</defs>
+</svg>

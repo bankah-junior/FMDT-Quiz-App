@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fmdt_quiz_app/screens/about_me_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -11,22 +12,22 @@ class OnboardingScreen extends StatelessWidget {
 
     return SafeArea(
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16.0),
         height: deviceHeight,
         width: deviceWidth,
-        color: const Color.fromARGB(255, 255, 255, 255),
+        color: Colors.white,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               children: [
-                Image.asset("assets/images/Onboarding.png"),
+                SvgPicture.asset("assets/images/onboarding.svg"),
                 Container(
                   margin: const EdgeInsets.only(top: 20),
                   child: const Text(
                     "Quizzia helps you challenge and assess your knowledge in any field of study",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.w600,
                       fontFamily: "Original Surfer",
                       color: Colors.black,
@@ -40,9 +41,9 @@ class OnboardingScreen extends StatelessWidget {
                   child: const Text(
                     "We’ve got various categories of quizzes, including mathematics, science, anime, books, music and so much more. Let’s get started now",
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 14,
                       fontWeight: FontWeight.w400,
-                      fontFamily: "Original Surfer",
+                      fontFamily: "Raleway",
                       height: 1.7,
                       color: Colors.black,
                       decoration: TextDecoration.none,
@@ -74,9 +75,9 @@ class OnboardingScreen extends StatelessWidget {
                       "Get Started",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 14,
                         fontWeight: FontWeight.w700,
-                        fontFamily: "Original Surfer",
+                        fontFamily: "Raleway",
                         color: Colors.white,
                         decoration: TextDecoration.none,
                       ),
@@ -92,7 +93,7 @@ class OnboardingScreen extends StatelessWidget {
                         TextSpan(
                           text: "By clicking Get Started, you agree to our ",
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 12,
                             fontWeight: FontWeight.w400,
                             fontFamily: "Original Surfer",
                             color: Colors.black,
