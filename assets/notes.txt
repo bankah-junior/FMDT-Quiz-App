@@ -1,0 +1,15 @@
+Splash Screen
+*************
+#FE950B
+#000000
+
+Onboarding
+**********
+#FFFFFF
+#121212
+#FE950B
+
+About Me
+********
+#F4F4F4
+#ABB0BC
