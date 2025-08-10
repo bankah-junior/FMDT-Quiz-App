@@ -14,6 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 4), () {
+      if (!mounted) return;
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const OnboardingScreen()),
@@ -35,29 +36,21 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
-              height: deviceHeight * 0.95,
+              height: deviceHeight * 0.90,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset("assets/images/brain.svg"),
-                  SizedBox(height: 10),
-                  Text(
-                    "Quizzia",
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: "Original Surfer",
-                      color: Colors.black,
-                    ),
-                  ),
-                ],
+                children: [SvgPicture.asset("assets/images/appLogo.svg")],
               ),
             ),
             SizedBox(
               height: deviceHeight * 0.05,
               child: const Text(
                 "Developed by Bankah",
-                style: TextStyle(color: Colors.black, fontSize: 15),
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                  fontFamily: "RaleWay",
+                ),
               ),
             ),
           ],
