@@ -36,6 +36,7 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
             fontWeight: FontWeight.w700,
           ),
         ),
+        backgroundColor: Colors.white,
       ),
       body: SafeArea(
         child: Padding(
@@ -131,7 +132,6 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             //
             Text(
               label,
