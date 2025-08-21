@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fmdt_quiz_app/screens/categories_screen.dart';
+import 'package:fmdt_quiz_app/widgets/show_quiz_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -87,7 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         shadowColor: Colors.transparent,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        showQuizDialog(context);
+                      },
                       child: SvgPicture.asset(
                         "assets/images/filter.svg",
                         width: 18.5,
