@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:fmdt_quiz_app/providers/difficulty_provider.dart';
 
 void showQuizDialog(BuildContext context) {
   int questionCount = 5;
-  String difficulty = "Easy";
 
   showDialog(
     context: context,
@@ -123,38 +124,42 @@ void showQuizDialog(BuildContext context) {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        decoration: BoxDecoration(
-                          color: const Color.fromRGBO(244, 244, 244, 1),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: DropdownButtonFormField<String>(
-                          value: difficulty,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                          ),
-                          items: ["Easy", "Medium", "Hard"]
-                              .map(
-                                (diff) => DropdownMenuItem(
-                                  value: diff,
-                                  child: Text(
-                                    diff,
-                                    style: const TextStyle(
-                                      fontSize: 16,
-                                      fontFamily: "Raleway",
-                                      fontWeight: FontWeight.w600,
+                      Consumer<DifficultyProvider>(
+                        builder: (context, difficultyProvider, child) {
+                          return Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(244, 244, 244, 1),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: DropdownButtonFormField<String>(
+                              value: difficultyProvider.difficulty,
+                              decoration: const InputDecoration(
+                                border: InputBorder.none,
+                              ),
+                              items: difficultyProvider.difficultyModes
+                                  .map(
+                                    (diff) => DropdownMenuItem(
+                                      value: diff,
+                                      child: Text(
+                                        diff,
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontFamily: "Raleway",
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
                                     ),
-                                  ),
-                                ),
-                              )
-                              .toList(),
-                          onChanged: (value) {
-                            if (value != null) {
-                              setState(() => difficulty = value);
-                            }
-                          },
-                        ),
+                                  )
+                                  .toList(),
+                              onChanged: (value) {
+                                if (value != null) {
+                                  difficultyProvider.setDifficulty(value);
+                                }
+                              },
+                            ),
+                          );
+                        },
                       ),
                     ],
                   ),
