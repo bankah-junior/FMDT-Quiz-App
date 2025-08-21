@@ -87,8 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         shadowColor: Colors.transparent,
                       ),
-                      onPressed: () {
-                      },
+                      onPressed: () {},
                       child: SvgPicture.asset(
                         "assets/images/filter.svg",
                         width: 18.5,
@@ -239,9 +238,9 @@ class _HomeScreenState extends State<HomeScreen> {
   /// Flexible icon builder for both SVG and IconData
   Widget _buildCategoryIcon(dynamic icon) {
     if (icon is String) {
-      return SvgPicture.asset(icon, width: 40, height: 40);
+      return SvgPicture.asset(icon, width: 90, height: 90);
     } else if (icon is IconData) {
-      return Icon(icon, size: 40, color: Colors.orange);
+      return Icon(icon, size: 90, color: Colors.orange);
     }
     return const SizedBox();
   }
