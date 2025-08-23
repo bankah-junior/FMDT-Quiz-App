@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:fmdt_quiz_app/providers/difficulty_provider.dart';
 
-void showQuizDialog(BuildContext context) {
+void showQuizDialog(BuildContext context, String data) {
   int questionCount = 5;
 
   showDialog(
@@ -83,7 +83,7 @@ void showQuizDialog(BuildContext context) {
                           ),
                           const SizedBox(width: 8),
                           Container(
-                            width: 90,
+                            width: 70,
                             height: 48,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
@@ -206,7 +206,7 @@ Widget cQuizControlButton({
   return GestureDetector(
     onTap: onPressed,
     child: Container(
-      width: 90,
+      width: 70,
       height: 48,
       decoration: BoxDecoration(
         color: Colors.transparent,

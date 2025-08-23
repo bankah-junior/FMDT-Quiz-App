@@ -88,9 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         shadowColor: Colors.transparent,
                       ),
-                      onPressed: () {
-                        showQuizDialog(context);
-                      },
+                      onPressed: () {},
                       child: SvgPicture.asset(
                         "assets/images/filter.svg",
                         width: 18.5,
@@ -142,26 +140,31 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   itemBuilder: (context, index) {
                     var category = categories[index];
-                    return Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromRGBO(255, 246, 234, 1),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          _buildCategoryIcon(category["icon"]),
-                          const SizedBox(height: 8),
-                          Text(
-                            category["name"],
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: "Raleway",
+                    return GestureDetector(
+                      onTap: () {
+                        showQuizDialog(context, category["name"]);
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(255, 246, 234, 1),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            _buildCategoryIcon(category["icon"]),
+                            const SizedBox(height: 8),
+                            Text(
+                              category["name"],
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                                fontFamily: "Raleway",
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     );
                   },
