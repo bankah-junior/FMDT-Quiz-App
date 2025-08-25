@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fmdt_quiz_app/screens/categories_screen.dart';
+import 'package:fmdt_quiz_app/widgets/show_quiz_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -139,26 +140,31 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   itemBuilder: (context, index) {
                     var category = categories[index];
-                    return Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromRGBO(255, 246, 234, 1),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          _buildCategoryIcon(category["icon"]),
-                          const SizedBox(height: 8),
-                          Text(
-                            category["name"],
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: "Raleway",
+                    return GestureDetector(
+                      onTap: () {
+                        showQuizDialog(context, category["name"]);
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(255, 246, 234, 1),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            _buildCategoryIcon(category["icon"]),
+                            const SizedBox(height: 8),
+                            Text(
+                              category["name"],
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                                fontFamily: "Raleway",
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     );
                   },
